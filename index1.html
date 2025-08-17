@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🐭 Rat in a Maze</title>
+  <link rel="stylesheet" href="style1.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="maze-panel">
+      <h1>🐭 Rat in a Maze</h1>
+      <p class="tagline">Can you help the rat reach his cheese? 🧀</p>
+      <div class="controls">
+        <input type="number" id="gridSizeInput" placeholder="Grid size (e.g., 8)" min="2" value="8" />
+        <button onclick="generateMaze()">🎲 New Maze</button>
+        <button onclick="startSolving()">🚀 Solve Maze</button>
+        <button onclick="startUserPath()">👣 Follow My Path</button>
+      </div>
+      <div id="maze" class="maze-grid"></div>
+    </div>
+  </div>
+
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <h2>🎉 It's delicious cheese! 
+        Yummy yummy! 🧀</h2>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <audio id="nomSound" src="roblox-eating-sound-effect-nom-nom-nom.mp3"></audio>
+  <script src="script1.js"></script>
+</body>
+</html>
